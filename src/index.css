@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-style {
+  @apply w-[276px] h-[53px] rounded-[10px] font-bold text-[20px];
+}
