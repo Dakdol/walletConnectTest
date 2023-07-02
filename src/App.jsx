@@ -3,7 +3,7 @@ import React, { Components } from "react";
 import CustomerFirst from "./pages/customer_first";
 import CustomerWalletConnect from "./pages/customer_walletConnect";
 import CustomerMain from "./pages/customer_main";
-import Signup from "./pages/signup";
+import CustomerSignup from "./pages/customer_signup";
 import { useState } from "react";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
             element={<CustomerWalletConnect />}
           />
           <Route path="/customer_main" element={<CustomerMain />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/customer_signup" element={<CustomerSignup />} />
         </Routes>
       </div>
     </BrowserRouter>

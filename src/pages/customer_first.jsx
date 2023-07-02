@@ -10,7 +10,7 @@ function CustomerFirst() {
         className="w-[340px] h-[202px] mt-[180px] flex flex-col   ml-[25px]"
       />
       <div className=" flex flex-col justify-center items-center ml-[-275px] mt-[240px]">
-        <Link to="/signup">
+        <Link to="/customer_signup">
           <button className="absolute bg-lightYellow btn-style">
             회원가입 🍽
           </button>
