@@ -13,7 +13,6 @@ function CustomerSignup() {
       await window.ethereum.request({ method: "eth_requestAccounts" });
       setIsMetaMaskConnected(true);
       // 연결 성공 후 추가 작업 수행
-      <Link to="../customer_walletConnect"></Link>;
     } catch (error) {
       console.error(error);
     }
@@ -53,13 +52,25 @@ function CustomerSignup() {
           <div className=" text-xl font-bold ml-[192px] mt-[-28px]">
             해 보세요!
           </div>
-          <button onClick={connectToMetaMask}>
-            <img
-              src={fox}
-              alt="logo"
-              className="w-[200px] h-[200px]  flex flex-col   ml-[60px] "
-            />
-          </button>
+          {isMetaMaskConnected ? (
+            <Link to="../customer_walletConnect">
+              <button>
+                <img
+                  src={fox}
+                  alt="logo"
+                  className="w-[200px] h-[200px]  flex flex-col   ml-[60px] "
+                />
+              </button>
+            </Link>
+          ) : (
+            <button onClick={connectToMetaMask}>
+              <img
+                src={fox}
+                alt="logo"
+                className="w-[200px] h-[200px]  flex flex-col   ml-[60px] "
+              />
+            </button>
+          )}
           <div className="text-sm  mt-[160px] flex  justify-center ml-[20px]">
             이용약관
           </div>
