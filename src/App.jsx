@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Link, Switch } from "react-router-dom";
 import React, { Components } from "react";
-import Main from "./pages/main";
-import WalletConnect from "./pages/walletConnect";
-import Home from "./pages/home";
+import CustomerFirst from "./pages/customer_first";
+import CustomerWalletConnect from "./pages/customer_walletConnect";
+import CustomerMain from "./pages/customer_main";
 import Signup from "./pages/signup";
 import { useState } from "react";
 
@@ -11,10 +11,13 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen flex flex-col">
         <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/main" element={<Main />} />
-          <Route path="/walletConnect" element={<WalletConnect />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<CustomerFirst />} />
+          <Route path="/customer_first" element={<CustomerFirst />} />
+          <Route
+            path="/customer_walletConnect"
+            element={<CustomerWalletConnect />}
+          />
+          <Route path="/customer_main" element={<CustomerMain />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>

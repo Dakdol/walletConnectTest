@@ -1,0 +1,47 @@
+import Footer from "../components/Footer";
+
+function WalletConnect() {
+  return (
+    <div className=" min-h-screen flex justify-center items-center">
+      <div className=" w-[321px] overflow-y-auto h-[800px] ">
+        <div className="flex flex-col justify-start items-center">
+          <div className=" absolute w-[321px] h-[30px] mt-[158px] text-[26px] text-[#000000] font-semibold">
+            메타마스크 연결에 성공했어요!
+          </div>
+          <div className="absolute w-[300px] h-[60px] mt-[206px] text-[20px] font-light">
+            <div className="flex justify-center flex-col items-center ">
+              <div>라이더님의 추가 정보를</div>
+              <div>입력해주세요!</div>
+            </div>
+          </div>
+          <div className="absolute w-[314px] h-[59px] mt-[340px] text-[15px]  opacity-40">
+            닉네임
+          </div>
+          <input
+            type="text"
+            className="w-[314px] h-[24px] mt-[380px] text-[16px] font-bold text-black border-b-[0.5px] border-black"
+          />
+          <div className="absolute w-[314px] h-[59px] mt-[443px] text-[15px]  opacity-40">
+            기본 배송지
+          </div>
+          <input
+            type="text"
+            className="w-[314px] h-[24px] mt-[75px] text-[16px] font-bold text-black border-b-[0.5px] border-yellow-500"
+          />
+
+          <div className="absolute w-[139px] h-[21px] mt-[532px] text-[14px] ml-[-175px]  text-[#AA3FFF]">
+            비밀번호는 필요없나요?
+          </div>
+
+          <button className="absolute bg-lightYellow mt-[672px] btn-style">
+            배달하러 가기! 🛵
+          </button>
+          <Footer />
+        </div>
+      </div>
+    </div>
+  );
+}
+{
+}
+export default WalletConnect;

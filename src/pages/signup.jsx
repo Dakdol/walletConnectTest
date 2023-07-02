@@ -28,7 +28,7 @@ function Signup() {
           <div className=" text-xl font-bold ml-[192px] mt-[-28px]">
             해 보세요!
           </div>
-          <Link to="../walletConnect">
+          <Link to="../customer_walletConnect">
             <button>
               <img
                 src={fox}

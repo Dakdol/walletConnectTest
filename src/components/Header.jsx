@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <Link to="../main">
+    <Link to="../customer_first">
       <button>
         <img
           src={BacktoMain}
@@ -16,12 +16,3 @@ function Header() {
 }
 
 export default Header;
-// width: 11.670000076293945px
-// height: 19.799999237060547px
-// top: 2.100006103515625px
-
-{
-  /* <Link to="/menuEdit">
-  <button>MenuEdit</button>
-</Link>; */
-}
